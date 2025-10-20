@@ -1,55 +1,70 @@
 <!doctype html>
 <html lang="es">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Edu Landoni — Portfolio</title>
+<meta name="description" content="Proyectos de embebidos, telemetría y C.">
+<meta property="og:title" content="Edu Landoni — Portfolio">
+<meta property="og:description" content="Proyectos de embebidos, telemetría y C.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://edulandoni.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
-<header>
-  <h1>Edu Landoni</h1>
-  <p>Estudiante de Ingeniería en Sistemas. Proyectos de embebidos, telemetría y C.</p>
-  <nav>
-    <a href="#proyectos">Proyectos</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#contacto">Contacto</a>
-  </nav>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>Edu Landoni</h1>
+    <p>Estudiante de Ingeniería en Sistemas. Embebidos, telemetría, C.</p>
+    <nav class="nav">
+      <a href="#proyectos" class="btn">Proyectos</a>
+      <a href="#skills" class="btn ghost">Skills</a>
+      <a href="#contacto" class="btn ghost">Contacto</a>
+    </nav>
+  </div>
 </header>
-<main>
+
+<main class="wrap">
   <section id="proyectos">
     <h2>Proyectos</h2>
-    <article>
-      <h3>Telemetría “cohete simulado”</h3>
-      <p>ESP32 + LoRa SX1278, MS5611, IMU 9DOF, logging en LittleFS. Detección de apogeo y aterrizaje.</p>
-      <p><a href="https://github.com/edulandoni/telemetria-cohete">Repositorio</a></p>
-    </article>
-    <article>
-      <h3>C practice — K.N. King</h3>
-      <p>Ejercicios C17 con Makefiles, sanitizers y GDB.</p>
-      <p><a href="https://github.com/edulandoni/c-programming-a-modern-approach-2e-exercises">Repositorio</a></p>
-    </article>
+    <div class="grid">
+      <article class="card">
+        <h3>Telemetría “cohete simulado”</h3>
+        <p>ESP32 + LoRa SX1278, MS5611, IMU 9DOF, logging en LittleFS. Detección de apogeo y aterrizaje.</p>
+        <p><a class="link" href="https://github.com/edulandoni/telemetria-cohete">Repositorio</a></p>
+      </article>
+      <article class="card">
+        <h3>C practice — K.N. King</h3>
+        <p>Ejercicios C17 con Makefiles, sanitizers y GDB.</p>
+        <p><a class="link" href="https://github.com/edulandoni/c-programming-a-modern-approach-2e-exercises">Repositorio</a></p>
+      </article>
+    </div>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>C, C++, Python</li>
-      <li>ESP32, LoRa, sensores, KiCad</li>
-      <li>Linux Fedora, Git, Make</li>
+    <ul class="tags">
+      <li>C</li><li>C++</li><li>Python</li><li>ESP32</li><li>LoRa</li>
+      <li>Sensores</li><li>KiCad</li><li>Linux Fedora</li><li>Git</li><li>Make</li>
     </ul>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
     <p>
-      <a href="mailto:tuemail@example.com">Email</a> ·
-      <a href="https://www.linkedin.com/in/edulandoni">LinkedIn</a> ·
-      <a href="https://x.com/edulandoni">X</a> ·
-      <a href="https://github.com/edulandoni">GitHub</a>
+      <a class="link" href="mailto:tuemail@example.com">Email</a> ·
+      <a class="link" href="https://www.linkedin.com/in/edulandoni">LinkedIn</a> ·
+      <a class="link" href="https://x.com/edulandoni">X</a> ·
+      <a class="link" href="https://github.com/edulandoni">GitHub</a>
     </p>
   </section>
 </main>
 
-<footer>
+<footer class="wrap foot">
   <small>© <span id="y"></span> Edu Landoni</small>
 </footer>
+
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
 </html>
