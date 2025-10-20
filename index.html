@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Edu Landoni — Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<header>
+  <h1>Edu Landoni</h1>
+  <p>Estudiante de Ingeniería en Sistemas. Proyectos de embebidos, telemetría y C.</p>
+  <nav>
+    <a href="#proyectos">Proyectos</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <article>
+      <h3>Telemetría “cohete simulado”</h3>
+      <p>ESP32 + LoRa SX1278, MS5611, IMU 9DOF, logging en LittleFS. Detección de apogeo y aterrizaje.</p>
+      <p><a href="https://github.com/edulandoni/telemetria-cohete">Repositorio</a></p>
+    </article>
+    <article>
+      <h3>C practice — K.N. King</h3>
+      <p>Ejercicios C17 con Makefiles, sanitizers y GDB.</p>
+      <p><a href="https://github.com/edulandoni/c-programming-a-modern-approach-2e-exercises">Repositorio</a></p>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C, C++, Python</li>
+      <li>ESP32, LoRa, sensores, KiCad</li>
+      <li>Linux Fedora, Git, Make</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>
+      <a href="mailto:tuemail@example.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/edulandoni">LinkedIn</a> ·
+      <a href="https://x.com/edulandoni">X</a> ·
+      <a href="https://github.com/edulandoni">GitHub</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <small>© <span id="y"></span> Edu Landoni</small>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</html>
